@@ -9,10 +9,10 @@ class Car
 {
 public:
     Car();
-    Car(QString name, QString description, QString type, QString price);
+    Car(QString name, QString description, QString type, QString price, bool available);
     Car(QJsonObject json);
 
-
+    bool available;
     QString name;
     QString description;
     QString type;

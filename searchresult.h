@@ -24,10 +24,11 @@ public:
     explicit SearchResult(QWidget *parent = nullptr);
     ~SearchResult();
     Ui::SearchResult *ui;
-    void clear();
-   // void fill(QList<Car*> items);
+public slots:
+
+private slots:
+    void onJsonFileReading(Car* car);
 private:
-    Car* car1;
 };
 
 #endif // SEARCHRESULT_H

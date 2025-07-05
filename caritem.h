@@ -16,12 +16,12 @@ class CarItem : public QWidget
 public:
     explicit CarItem(Car* MainSource = nullptr, QWidget *parent = nullptr);
     ~CarItem();
-
+    Ui::CarItem *ui;
 private slots:
     void on_pushButton_clicked();
 
 private:
-    Ui::CarItem *ui;
+
     Car* MainSource;
     RentConfirmation* RentConf;
 };

@@ -19,7 +19,7 @@ public:
     ~MainWindow();
     Ui::MainWindow *ui;
 private slots:
- //   void MainWindow::on_pushButton_clicked();
+    void on_pushButton_clicked();
 private:
     SearchResult* searchresult;
 };

@@ -18,8 +18,7 @@ MainWindow::~MainWindow()
     delete ui;
     delete this->searchresult;
 }
-//void MainWindow::on_pushButton_clicked(){
-//    this->searchresult->clear();
-//
-//}
+void MainWindow::on_pushButton_clicked(){
+
+}
 

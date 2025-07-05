@@ -1,0 +1,23 @@
+[
+    {
+    "name":"car1",
+    "description":"1223123",
+    "type":"A",
+    "price":"42,97",
+    "available":false
+    },
+    {
+    "name":"car2",
+    "description":"12288123",
+    "type":"C",
+    "price":"35,25",
+    "available":false
+    },
+    {
+    "name":"car3",
+    "description":"машина хорошая",
+    "type":"A",
+    "price":"78,12",
+    "available":false
+    }
+]

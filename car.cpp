@@ -2,11 +2,12 @@
 
 Car::Car() {}
 
-Car::Car(QString name, QString description, QString type, QString price) {
+Car::Car(QString name, QString description, QString type, QString price, bool available) {
     this->name = name;
     this->description = description;
     this->type = type;
     this->price = price;
+    this->available = available;
 }
 
 Car::Car(QJsonObject json) {
@@ -14,4 +15,5 @@ Car::Car(QJsonObject json) {
     this->description = json["description"].toString();
     this->type = json["type"].toString().at(0);
     this->price = json["price"].toString();
+    this->available = json["available"].toBool();
 }
