@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "searchresult.h"
+#include "rentconfirmation.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,9 +19,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     Ui::MainWindow *ui;
-private slots:
+public slots:
     void on_pushButton_clicked();
+//    void whenRented();
+signals:
+    void onSearchClicked();
 private:
     SearchResult* searchresult;
+    RentConfirmation* rf;
+    Car* car;
 };
 #endif // MAINWINDOW_H

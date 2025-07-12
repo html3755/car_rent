@@ -9,14 +9,18 @@ class Car
 {
 public:
     Car();
-    Car(QString name, QString description, QString type, QString price, bool available);
+    Car(QString name, QString description, QString type, double price, bool available);
     Car(QJsonObject json);
 
     bool available;
     QString name;
     QString description;
     QString type;
-    QString price;
+    double price;
+public slots:
+    QJsonObject toJson();
 };
+
+
 
 #endif // CAR_H

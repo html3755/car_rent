@@ -41,14 +41,14 @@
      <item>
       <layout class="QGridLayout" name="gridLayout" rowstretch="1,1,1,1,1,1,1" columnstretch="0,0" columnminimumwidth="0,20">
        <item row="4" column="1">
-        <widget class="QLabel" name="label_6">
+        <widget class="QLabel" name="placeTo">
          <property name="text">
           <string>place2</string>
          </property>
         </widget>
        </item>
        <item row="6" column="1">
-        <widget class="QLabel" name="label_8">
+        <widget class="QLabel" name="price">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -61,42 +61,42 @@
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="timeFrom">
          <property name="text">
           <string>time1</string>
          </property>
         </widget>
        </item>
        <item row="3" column="0">
-        <widget class="QLabel" name="label_9">
+        <widget class="QLabel" name="image">
          <property name="text">
           <string>image</string>
          </property>
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QLabel" name="label_4">
+        <widget class="QLabel" name="TimeTo">
          <property name="text">
           <string>time2</string>
          </property>
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="name">
          <property name="text">
           <string>name</string>
          </property>
         </widget>
        </item>
        <item row="3" column="1">
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="placeFrom">
          <property name="text">
           <string>place1</string>
          </property>
         </widget>
        </item>
        <item row="5" column="1">
-        <widget class="QLabel" name="label_7">
+        <widget class="QLabel" name="description">
          <property name="text">
           <string>description</string>
          </property>
@@ -126,14 +126,17 @@
         </spacer>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="rentButton">
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
          <property name="text">
           <string>арендовать</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="cancelButton">
          <property name="text">
           <string>отмена</string>
          </property>

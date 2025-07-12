@@ -4,6 +4,11 @@
 #include <QWidget>
 #include "car.h"
 #include "rentconfirmation.h"
+#include <QFile>
+#include <QJsonDocument>
+#include <QJsonArray>
+#include <QJsonObject>
+#include <QFileDialog>
 
 namespace Ui {
 class CarItem;
@@ -17,13 +22,18 @@ public:
     explicit CarItem(Car* MainSource = nullptr, QWidget *parent = nullptr);
     ~CarItem();
     Ui::CarItem *ui;
+public slots:
+    void onRentButtonClicked();
+    bool matchesFilter(const QString& filterText);
+    void onCancelClicked();
 private slots:
     void on_pushButton_clicked();
+signals:
+   void onConfirm();
 
 private:
-
-    Car* MainSource;
     RentConfirmation* RentConf;
+    Car* MainSource;
 };
 
 #endif // CARITEM_H

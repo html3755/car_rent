@@ -19,6 +19,7 @@ SearchResult::SearchResult(QWidget *parent)
         Car* car = new Car(object);
         onJsonFileReading(car);
     }
+    file.close();
 }
 
 void SearchResult::onJsonFileReading(Car* car) {
@@ -32,4 +33,17 @@ void SearchResult::onJsonFileReading(Car* car) {
 SearchResult::~SearchResult()
 {
     delete ui;
+}
+
+void SearchResult::onSearch(const QString& filterText){
+    QList<CarItem*> carItems = this->findChildren<CarItem*>();
+    for (CarItem* item : carItems){
+        if(item->matchesFilter(filterText)){
+            item->show();
+        }
+        else{
+            item->hide();
+        }
+    }
+
 }

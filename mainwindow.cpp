@@ -19,6 +19,9 @@ MainWindow::~MainWindow()
     delete this->searchresult;
 }
 void MainWindow::on_pushButton_clicked(){
-
+    QString selectedType = ui->typeFilter->currentText();
+    searchresult->onSearch(selectedType);
 }
+
+
 

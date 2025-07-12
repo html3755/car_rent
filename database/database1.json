@@ -3,21 +3,21 @@
     "name":"car1",
     "description":"1223123",
     "type":"A",
-    "price":"12,97",
+    "price":12.97,
     "available":true
     },
     {
     "name":"car2",
     "description":"12288123",
     "type":"C",
-    "price":"35,65",
+    "price":35.65,
     "available":true
     },
     {
     "name":"car3",
     "description":"машина хорошая",
     "type":"B",
-    "price":"18,12",
+    "price":18.12,
     "available":false
     }
 ]

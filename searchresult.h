@@ -18,6 +18,7 @@ class SearchResult : public QWidget
     Q_OBJECT
 
 public:
+
     QJsonDocument data;
     QFile file;
     QString datapath;
@@ -25,10 +26,11 @@ public:
     ~SearchResult();
     Ui::SearchResult *ui;
 public slots:
-
+    void onSearch(const QString& filterText);
 private slots:
     void onJsonFileReading(Car* car);
 private:
+    Car* car;
 };
 
 #endif // SEARCHRESULT_H
